@@ -5,7 +5,7 @@ exports[`Todos component matches snapshot 1`] = `
   className="todos"
 >
   <h2>
-    Todos (
+    Todoss (
     1
     )
   </h2>
