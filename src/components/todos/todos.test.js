@@ -10,6 +10,8 @@ import Component from ".";
 const formErrors = <ul className="errors" />;
 const formSuccess = <div className="payment-success"></div>;
 
+const todosTitle = (n) => `Todos (${n})`;
+
 describe("Todos component", () => {
   let wrapper;
   beforeEach(() => {
@@ -26,7 +28,7 @@ describe("Todos component", () => {
   });
 
   it("starts with a todo list with one item available and an empty input", () => {
-    const todoTitle = <h2>Todos (1)</h2>;
+    const todoTitle = <h2>{todosTitle(1)}</h2>;
     const todos = wrapper.find("ul.list");
 
     expect(wrapper.contains(todoTitle)).toEqual(true);
@@ -41,7 +43,7 @@ describe("Todos component", () => {
   });
 
   it("When adding a NEW todo, todos not done should equal 2", () => {
-    const todoTitle = <h2>Todos (2)</h2>;
+    const todoTitle = <h2>{todosTitle(2)}</h2>;
     const form = wrapper.find("form.add-todo");
     const input = wrapper.find("input.input");
 
@@ -55,7 +57,7 @@ describe("Todos component", () => {
   });
 
   it("When Checking a todo, items not done should equal 0", () => {
-    const todoTitle = <h2>Todos (0)</h2>;
+  const todoTitle = <h2>{todosTitle(0)}</h2>;
     let checkbox, todo;
 
     todo = wrapper.find("li.todo").first();
