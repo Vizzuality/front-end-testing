@@ -6,10 +6,6 @@ import renderer from "react-test-renderer";
 
 import Component from ".";
 
-// Component elements
-const formErrors = <ul className="errors" />;
-const formSuccess = <div className="payment-success"></div>;
-
 const todosTitle = (n) => `Todos (${n})`;
 
 describe("Todos component", () => {
