@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos component matches snapshot 1`] = `
+<div
+  className="todos"
+>
+  <h2>
+    Todos (
+    1
+    )
+  </h2>
+  <ul
+    className="list"
+  >
+    <li
+      className="todo "
+    >
+      <p>
+        Get milk
+      </p>
+      <input
+        checked={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+    </li>
+  </ul>
+  <form
+    className="add-todo"
+    onSubmit={[Function]}
+  >
+    <input
+      className="input"
+      onChange={[Function]}
+      placeholder="Add new todo"
+      type="text"
+      value=""
+    />
+  </form>
+</div>
+`;
