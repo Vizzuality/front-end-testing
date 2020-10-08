@@ -33,7 +33,7 @@ const Todos = () => {
 
   return (
     <div className="todos">
-      <h2>Todoss ({getTodosLeft(todos)})</h2>
+      <h2>Todos ({getTodosLeft(todos)})</h2>
       <ul className="list">
         {todos.map((todo, index) => (
           <li key={index + todo.text} className={`todo ${todo.done ? '-done' : ''}`}>

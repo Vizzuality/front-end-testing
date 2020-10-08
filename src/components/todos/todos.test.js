@@ -10,7 +10,7 @@ import Component from ".";
 const formErrors = <ul className="errors" />;
 const formSuccess = <div className="payment-success"></div>;
 
-const todosTitle = (n) => `Todoss (${n})`;
+const todosTitle = (n) => `Todos (${n})`;
 
 describe("Todos component", () => {
   let wrapper;
