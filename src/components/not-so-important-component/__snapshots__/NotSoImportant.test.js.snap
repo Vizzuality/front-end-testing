@@ -4,6 +4,6 @@ exports[`NotSoImportant component matches snapshot 1`] = `
 <div
   className="im-not-important"
 >
-  shruuug
+  shruuugssss
 </div>
 `;
